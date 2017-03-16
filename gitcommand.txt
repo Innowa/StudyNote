@@ -12,7 +12,7 @@ git commit -m "(message)"
 git status
 
 //first push
-git push -u (Internet git server) (brench)
+git push -u (Internet git server) (branch)
 
 //show difference
 git diff 
@@ -43,4 +43,33 @@ git rm (file)
 git remote add (origin) git@github.com:(username)/(dir).git
 
 //isn't first push
-git push (origin) (brench)
+git push (origin) (branch)
+
+//clone github repository
+git clone git@github.com:(username)/(repository).git
+
+//create branch
+git checkout -b (branchname)
+==
+git branch (branchname)
+git checkout (branchname)
+
+//show all branch
+git branch
+
+//switch branch
+git checkout (branchname)
+
+//merge branch
+git merge (branchname)
+
+//delete branch
+git branch -d (branchname)
+
+//show branch merge
+git log --graph --pretty=oneline --abbrev-commit
+
+//forbid Fast forward
+git merge --no-ff (-m "(message)") (branchname)
+
+
