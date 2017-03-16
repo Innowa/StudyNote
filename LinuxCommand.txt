@@ -1,0 +1,18 @@
+
+//create dir
+mkdir
+
+//move to dir 
+cd (dir)
+
+//show absolute path
+pwd
+
+//delete file
+rm (file)
+
+//create SSH Key
+ssh-keygen -t rsa -C"youremail@example.com"
+
+//open dir
+ls

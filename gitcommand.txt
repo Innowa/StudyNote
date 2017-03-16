@@ -1,9 +1,46 @@
 
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+//create git repository
+git init
+
 git add
 
 git commit -m "(message)"
 
 git status
 
+//first push
 git push -u (Internet git server) (brench)
 
+//show difference
+git diff 
+
+//show log (oneline display)
+git log (--pretty=oneline)
+
+//back to previous version
+git reset --hard HEAD^ (HEAD~(num))
+
+//recover
+git reset --hard (num)
+
+//check history
+git reflog
+
+git diff HEAD -- (file)
+
+//give up modification
+git checkout -- (file)
+
+git reset HEAD (file)
+
+//delete file
+git rm (file)
+
+//add github repository
+git remote add (origin) git@github.com:(username)/(dir).git
+
+//isn't first push
+git push (origin) (brench)
