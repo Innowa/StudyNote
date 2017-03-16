@@ -1,4 +1,9 @@
+
 git add
-git commit -m ""
+
+git commit -m "(message)"
+
 git status
+
 git push -u (Internet git server) (brench)
+
