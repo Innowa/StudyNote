@@ -72,4 +72,20 @@ git log --graph --pretty=oneline --abbrev-commit
 //forbid Fast forward
 git merge --no-ff (-m "(message)") (branchname)
 
+//collect current workspace
+git stash
+
+//get stash workspace
+git stash apply 
+git stash drop
+==
+git stash pop
+
+//check stash content
+git stash list
+
+//recover specific stash
+git stash apply stash@{0}
+
+
 
