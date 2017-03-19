@@ -87,5 +87,25 @@ git stash list
 //recover specific stash
 git stash apply stash@{0}
 
+//break delete branch
+git branch -D (branchname)
+
+//check origin repository
+git remote
+git remote -v
+
+//teamwork
+1.git push origin branchname
+2.git pull
+3.git push origin branchname
+4.git branch --set-upstream branchname origin/branchname
+
+//create tag
+git tag (name)
+
+//check all tag
+git tag
+
+//
 
 
