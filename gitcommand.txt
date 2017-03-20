@@ -159,3 +159,5 @@ cat .git/config
   find "git:x:1001:1001:,,,:/home/git/:/bin/bash"
   change to "git:x:1001:1001:,,,:/home/git/:/usr/bin/git-shell"
 6.git clone git@server:/srv/(gitname).git
+
+
