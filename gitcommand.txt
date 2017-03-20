@@ -87,7 +87,8 @@ git stash list
 //recover specific stash
 git stash apply stash@{0}
 
-//break delete branch
+//force delete branch
+//force delete branch
 git branch -D (branchname)
 
 //check origin repository
@@ -106,6 +107,55 @@ git tag (name)
 //check all tag
 git tag
 
-//
+//add history tag
+git tag (tagname) (commit id)
 
+//order by alphabet
+git show (tagname)
 
+//create tag with content
+git tag -a (tagname) -m "(message)" (commit id)
+
+//sign by private key
+git tag -s (tagname) -m "(message)" (commit id)
+
+//delete tag
+git tag -d (tagname)
+
+//push tag to origin
+git push origin (tagname)
+
+//push all tag
+git push origin --tags
+
+//delete origin tag
+git tag -d (tagname)
+git push origin :refs/tags/(tagname)
+
+//show git color
+git config --global color.ui true
+
+//create .gitignore file to ignore useless file
+
+//force add
+git add -f (filename)
+
+//setting alias
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD'
+git config --global alias.last 'log -1'
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+//config file url
+cat .git/config
+
+//create git server
+1.sudo apt-get install git
+2.sudo adduser git
+3.collect all member's public key and import "/home/git/.ssh/authorized_keys" file
+4.sudo git init --bare (gitname).git
+  sudo chowm -R git:git (gitname).git
+5.edit "/etc/passwd" file
+  find "git:x:1001:1001:,,,:/home/git/:/bin/bash"
+  change to "git:x:1001:1001:,,,:/home/git/:/usr/bin/git-shell"
+6.git clone git@server:/srv/(gitname).git
