@@ -6,3 +6,5 @@ Add Git study note.
 Add Linux command study note.
 
 Add regex expression.
+
+Thanks for michaelliao
