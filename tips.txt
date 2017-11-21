@@ -1,1 +1,5 @@
 Remenber check out NullpointerException!
+
+use null != not != null
+
+use list.isEmpty()
